@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pharma-backend
+spec:
+  replicas: 2 # High availability ke liye 2 pods
+  selector:
+    matchLabels:
+      app: pharma-backend
+  template:
+    metadata:
+      labels:
+        app: pharma-backend
+    spec:
+      containers:
+      - name: backend
+        image: your-docker-repo/pharma-backend:v1
+        ports:
+        - containerPort: 3000
+        volumeMounts:
+        - name: product-images
+          mountPath: /app/uploads # Yahan aapki images save hongi
+      volumes:
+      - name: product-images
+        persistentVolumeClaim:
+          claimName: your-existing-pvc-name # Apna PVC naam yahan daalein
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+spec:
+  selector:
+    app: pharma-backend
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000

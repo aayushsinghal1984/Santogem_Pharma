@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santogem Pharma | Advanced Medical Solutions</title>
+    <!-- Tailwind CSS CDN for Modern Styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Color Theme Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pharmaBlue: '#005b96',
+                        pharmaDark: '#011f4b',
+                        pharmaGreen: '#4b86b4',
+                        bgSoft: '#f0f4f8'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Animations and Styles -->
+    <style>
+        .product-card {
+            transition: all 0.4s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px -12px rgba(0, 91, 150, 0.25);
+        }
+        .image-zoom:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-bgSoft font-sans text-gray-800 antialiased">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <!-- Logo Icon (Agar aapke paas logo.png hai toh is SVG ko hata kar <img> tag lagayein) -->
+                    <svg class="h-8 w-8 text-pharmaBlue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                    </svg>
+                    <span class="font-bold text-2xl text-pharmaDark">Santogem Pharma</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-pharmaBlue font-semibold hover:text-pharmaDark transition">Home</a>
+                    <a href="#products" class="text-gray-500 hover:text-pharmaBlue transition">Our Products</a>
+                    <a href="#" class="text-gray-500 hover:text-pharmaBlue transition">R&D</a>
+                    <a href="#" class="text-gray-500 hover:text-pharmaBlue transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="mt-16 bg-pharmaDark text-white pt-24 pb-32 px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
+            Innovating for a <span class="text-pharmaGreen">Healthier Tomorrow</span>
+        </h1>
+        <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-300">
+            High-quality pharmaceutical products developed with cutting-edge research to ensure global wellness.
+        </p>
+    </section>
+
+    <!-- Products Display Section -->
+    <section id="products" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 pb-20">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-pharmaDark bg-white inline-block px-8 py-3 rounded-full shadow-lg">Featured Medicines</h2>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <!-- Product Card 1 (Texakart-PT. 4.5) -->
+            <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 image-zoom flex flex-col">
+                <div class="h-48 bg-gray-100 overflow-hidden relative">
+                    <!-- Local image ka naam jo aapne upload kiya tha -->
+                    <img src="./images/product1.jpg" alt="Texakart-PT. 4.5 Injection" class="w-full h-full object-contain p-4 transition duration-500">
+                    <span class="absolute top-4 right-4 bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full">Rx</span>
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-pharmaDark mb-1">Texakart-PT. 4.5 Injection</h3>
+                        <p class="text-sm text-pharmaBlue font-medium mb-3">Piperacillin & Tazobactam Injection IP (4.5 gm)</p>
+                        <p class="text-gray-600 text-sm mb-4">Broad-spectrum antibiotic injection for the treatment of severe bacterial infections.</p>
+                    </div>
+                    <button class="w-full bg-pharmaBlue hover:bg-pharmaDark text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                        View Formulation Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Card 2 (Placeholder) -->
+            <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 image-zoom flex flex-col">
+                <div class="h-48 bg-gray-100 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1628771065518-0d82f1938462?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Blister Pack" class="w-full h-full object-cover transition duration-500">
+                    <span class="absolute top-4 right-4 bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full">In Stock</span>
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-pharmaDark mb-1">NeuroHeal Forte</h3>
+                        <p class="text-sm text-pharmaBlue font-medium mb-3">Methylcobalamin & Pregabalin</p>
+                        <p class="text-gray-600 text-sm mb-4">Targeted therapy for peripheral neuropathy and nerve damage repair.</p>
+                    </div>
+                    <button class="w-full bg-pharmaBlue hover:bg-pharmaDark text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                        View Formulation Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Card 3 (Placeholder) -->
+            <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 image-zoom flex flex-col">
+                <div class="h-48 bg-gray-100 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1550572017-edb799988a87?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Syrup Bottle" class="w-full h-full object-cover transition duration-500">
+                    <span class="absolute top-4 right-4 bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full">In Stock</span>
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-pharmaDark mb-1">ImmunoShield Syrup</h3>
+                        <p class="text-sm text-pharmaBlue font-medium mb-3">Multivitamin & Mineral Complex</p>
+                        <p class="text-gray-600 text-sm mb-4">Complete daily nutritional support for boosting immunity and energy levels.</p>
+                    </div>
+                    <button class="w-full bg-pharmaBlue hover:bg-pharmaDark text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                        View Formulation Details
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 mt-12 py-8 text-center text-gray-500">
+        <p>&copy; 2026 Santogem Pharma. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
