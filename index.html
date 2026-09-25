@@ -44,10 +44,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <div class="flex-shrink-0 flex items-center gap-2">
-                    <!-- Logo Icon (Agar aapke paas logo.png hai toh is SVG ko hata kar <img> tag lagayein) -->
-                    <svg class="h-8 w-8 text-pharmaBlue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                    </svg>
+                    <!-- Aapka Local Logo -->
+                    <img src="logo.png" alt="Santogem Pharma Logo" class="h-10 w-auto">
                     <span class="font-bold text-2xl text-pharmaDark">Santogem Pharma</span>
                 </div>
                 <div class="hidden md:flex space-x-8">
@@ -82,8 +80,8 @@
             <!-- Product Card 1 (Texakart-PT. 4.5) -->
             <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 image-zoom flex flex-col">
                 <div class="h-48 bg-gray-100 overflow-hidden relative">
-                    <!-- Local image ka naam jo aapne upload kiya tha -->
-                    <img src="./images/product1.jpg" alt="Texakart-PT. 4.5 Injection" class="w-full h-full object-contain p-4 transition duration-500">
+                    <!-- Texakart ki image -->
+                    <img src="/images/product1.png" alt="Texakart-PT. 4.5 Injection" class="w-full h-full object-contain p-4 transition duration-500">
                     <span class="absolute top-4 right-4 bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full">Rx</span>
                 </div>
                 <div class="p-6 flex-grow flex flex-col justify-between">
@@ -91,42 +89,6 @@
                         <h3 class="text-xl font-bold text-pharmaDark mb-1">Texakart-PT. 4.5 Injection</h3>
                         <p class="text-sm text-pharmaBlue font-medium mb-3">Piperacillin & Tazobactam Injection IP (4.5 gm)</p>
                         <p class="text-gray-600 text-sm mb-4">Broad-spectrum antibiotic injection for the treatment of severe bacterial infections.</p>
-                    </div>
-                    <button class="w-full bg-pharmaBlue hover:bg-pharmaDark text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
-                        View Formulation Details
-                    </button>
-                </div>
-            </div>
-
-            <!-- Product Card 2 (Placeholder) -->
-            <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 image-zoom flex flex-col">
-                <div class="h-48 bg-gray-100 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1628771065518-0d82f1938462?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Blister Pack" class="w-full h-full object-cover transition duration-500">
-                    <span class="absolute top-4 right-4 bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full">In Stock</span>
-                </div>
-                <div class="p-6 flex-grow flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-xl font-bold text-pharmaDark mb-1">NeuroHeal Forte</h3>
-                        <p class="text-sm text-pharmaBlue font-medium mb-3">Methylcobalamin & Pregabalin</p>
-                        <p class="text-gray-600 text-sm mb-4">Targeted therapy for peripheral neuropathy and nerve damage repair.</p>
-                    </div>
-                    <button class="w-full bg-pharmaBlue hover:bg-pharmaDark text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
-                        View Formulation Details
-                    </button>
-                </div>
-            </div>
-
-            <!-- Product Card 3 (Placeholder) -->
-            <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 image-zoom flex flex-col">
-                <div class="h-48 bg-gray-100 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1550572017-edb799988a87?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Syrup Bottle" class="w-full h-full object-cover transition duration-500">
-                    <span class="absolute top-4 right-4 bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full">In Stock</span>
-                </div>
-                <div class="p-6 flex-grow flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-xl font-bold text-pharmaDark mb-1">ImmunoShield Syrup</h3>
-                        <p class="text-sm text-pharmaBlue font-medium mb-3">Multivitamin & Mineral Complex</p>
-                        <p class="text-gray-600 text-sm mb-4">Complete daily nutritional support for boosting immunity and energy levels.</p>
                     </div>
                     <button class="w-full bg-pharmaBlue hover:bg-pharmaDark text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
                         View Formulation Details

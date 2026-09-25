@@ -1,31 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pharma-frontend
+  name: santogem-frontend-deploy
 spec:
-  replicas: 2
+  replicas: 2 # Ye aapki website ke 2 pods banayega taaki site kabhi down na ho
   selector:
     matchLabels:
-      app: pharma-frontend
+      app: santogem-frontend
   template:
     metadata:
       labels:
-        app: pharma-frontend
+        app: santogem-frontend
     spec:
       containers:
       - name: frontend
-        image: your-docker-repo/pharma-frontend:v1
+        # YAHAN APNI PUSH KI HUI IMAGE KA NAAM DALEIN
+        image: testaksregistry2.azurecr.io/santogem_pharma:latest
         ports:
-        - containerPort: 80
+        - containerPort: 80 # Ya wo port jo aapne Dockerfile me Expose kiya hai
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: frontend-service
+  name: santogem-frontend-svc
 spec:
+  type: NodePort # Ye website ko cluster ke bahar access karne dega
   selector:
-    app: pharma-frontend
+    app: santogem-frontend
   ports:
     - protocol: TCP
       port: 80
       targetPort: 80
+      nodePort: 30005 # Is port par aapki website live hogi
