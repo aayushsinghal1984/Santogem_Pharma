@@ -15,7 +15,7 @@ spec:
       containers:
       - name: frontend
         # YAHAN APNI PUSH KI HUI IMAGE KA NAAM DALEIN
-        image: testaksregistry2.azurecr.io/santogem_pharma:d82016d
+        image: visha123araxion.azurecr.io/santogem_pharma:latest
         ports:
         - containerPort: 80 # Ya wo port jo aapne Dockerfile me Expose kiya hai
 ---
