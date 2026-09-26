@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Santogem Pharma | Advanced Medical Solutions</title>
+    <title>Santogem Pharma Pvt Ltd | Advanced Medical Solutions</title>
     <!-- Tailwind CSS CDN for Modern Styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Custom Color Theme Config -->
     <script>
         tailwind.config = {
@@ -28,15 +29,18 @@
         .product-card {
             transition: all 0.4s ease;
         }
+
         .product-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 25px 50px -12px rgba(0, 91, 150, 0.25);
         }
+
         .image-zoom:hover img {
             transform: scale(1.1);
         }
     </style>
 </head>
+
 <body class="bg-bgSoft font-sans text-gray-800 antialiased">
 
     <!-- Navigation Bar -->
@@ -45,14 +49,14 @@
             <div class="flex justify-between h-16 items-center">
                 <div class="flex-shrink-0 flex items-center gap-2">
                     <!-- Aapka Local Logo -->
-                    <img src="logo.png" alt="Santogem Pharma Logo" class="h-10 w-auto">
-                    <span class="font-bold text-2xl text-pharmaDark">Santogem Pharma</span>
+                    <img src="logo.png" alt="Santogem Pharma Pvt Ltd Logo" class="h-10 w-auto">
+                    <span class="font-bold text-2xl text-pharmaDark">Santogem Pharma Pvt Ltd</span>
                 </div>
                 <div class="hidden md:flex space-x-8">
                     <a href="#" class="text-pharmaBlue font-semibold hover:text-pharmaDark transition">Home</a>
                     <a href="#products" class="text-gray-500 hover:text-pharmaBlue transition">Our Products</a>
                     <a href="#" class="text-gray-500 hover:text-pharmaBlue transition">R&D</a>
-                    <a href="#" class="text-gray-500 hover:text-pharmaBlue transition">Contact</a>
+                    <a href="#contact" class="text-gray-500 hover:text-pharmaBlue transition">Contact</a>
                 </div>
             </div>
         </div>
@@ -71,26 +75,191 @@
     <!-- Products Display Section -->
     <section id="products" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 pb-20">
         <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-pharmaDark bg-white inline-block px-8 py-3 rounded-full shadow-lg">Featured Medicines</h2>
+            <h2 class="text-3xl font-bold text-pharmaDark bg-white inline-block px-8 py-3 rounded-full shadow-lg">
+                Featured Medicines</h2>
         </div>
 
         <!-- Product Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            
-            <!-- Product Card 1 (Texakart-PT. 4.5) -->
-            <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 image-zoom flex flex-col">
+
+            <!-- Product Card 1 -->
+            <div
+                class="product-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 image-zoom flex flex-col">
                 <div class="h-48 bg-gray-100 overflow-hidden relative">
-                    <!-- Texakart ki image -->
-                    <img src="/images/product1.png" alt="Texakart-PT. 4.5 Injection" class="w-full h-full object-contain p-4 transition duration-500">
-                    <span class="absolute top-4 right-4 bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full">Rx</span>
+                    <img src="./images/product1.png" alt="Texakart-PT. 4.5 Injection"
+                        class="w-full h-full object-contain p-4 transition duration-500">
+                    <span
+                        class="absolute top-4 right-4 bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full">Rx</span>
                 </div>
                 <div class="p-6 flex-grow flex flex-col justify-between">
                     <div>
                         <h3 class="text-xl font-bold text-pharmaDark mb-1">Texakart-PT. 4.5 Injection</h3>
-                        <p class="text-sm text-pharmaBlue font-medium mb-3">Piperacillin & Tazobactam Injection IP (4.5 gm)</p>
-                        <p class="text-gray-600 text-sm mb-4">Broad-spectrum antibiotic injection for the treatment of severe bacterial infections.</p>
+                        <p class="text-sm text-pharmaBlue font-medium mb-3">Piperacillin & Tazobactam Injection IP (4.5
+                            gm)</p>
+                        <p class="text-gray-600 text-sm mb-4">Broad-spectrum antibiotic injection for the treatment of
+                            severe bacterial infections.</p>
                     </div>
-                    <button class="w-full bg-pharmaBlue hover:bg-pharmaDark text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                    <button
+                        class="w-full bg-pharmaBlue hover:bg-pharmaDark text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                        View Formulation Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div
+                class="product-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 image-zoom flex flex-col">
+                <div class="h-48 bg-gray-100 overflow-hidden relative">
+                    <img src="./images/product2.png" alt="Itchkart-T Cream"
+                        class="w-full h-full object-contain p-4 transition duration-500">
+                    <span
+                        class="absolute top-4 right-4 bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full">Rx</span>
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-pharmaDark mb-1">Itchkart-T Cream</h3>
+                        <p class="text-sm text-pharmaBlue font-medium mb-3">Ofloxacin, Tinidazole, Terbinafine HCl,
+                            Clobetasol Propionate & Dexpanthenol Cream (15 g)</p>
+                        <p class="text-gray-600 text-sm mb-4">For external use only; formulated for dermatitis, skin
+                            inflammation, and fungal infections.</p>
+                    </div>
+                    <button
+                        class="w-full bg-pharmaBlue hover:bg-pharmaDark text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                        View Formulation Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div
+                class="product-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 image-zoom flex flex-col">
+                <div class="h-48 bg-gray-100 overflow-hidden relative">
+                    <img src="./images/product3.png" alt="SANTOCLAVE Injection"
+                        class="w-full h-full object-contain p-4 transition duration-500">
+                    <span
+                        class="absolute top-4 right-4 bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full">Rx</span>
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-pharmaDark mb-1">SANTOCLAVE 1.2 gm</h3>
+                        <p class="text-sm text-pharmaBlue font-medium mb-3">Amoxycillin & Potassium Clavulanate
+                            Injection IP (1.2 gm)</p>
+                        <p class="text-gray-600 text-sm mb-4">Antibacterial injection formulation intended strictly for
+                            IV use only.</p>
+                    </div>
+                    <button
+                        class="w-full bg-pharmaBlue hover:bg-pharmaDark text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                        View Formulation Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div
+                class="product-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 image-zoom flex flex-col">
+                <div class="h-48 bg-gray-100 overflow-hidden relative">
+                    <img src="./images/product4.png" alt="Mkart Ointment"
+                        class="w-full h-full object-contain p-4 transition duration-500">
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-pharmaDark mb-1">Mkart Ointment</h3>
+                        <p class="text-sm text-pharmaBlue font-medium mb-3">Mupirocin 2.0% w/w Ointment (5g)</p>
+                        <p class="text-gray-600 text-sm mb-4">Topical ointment for external use only. Should be stored
+                            protected from light and moisture at a temperature not exceeding 25°C.</p>
+                    </div>
+                    <button
+                        class="w-full bg-pharmaBlue hover:bg-pharmaDark text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                        View Formulation Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div
+                class="product-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 image-zoom flex flex-col">
+                <div class="h-48 bg-gray-100 overflow-hidden relative">
+                    <img src="./images/product5.png" alt="CYPROGEM Syrup"
+                        class="w-full h-full object-contain p-4 transition duration-500">
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-pharmaDark mb-1">CYPROGEM Syrup</h3>
+                        <p class="text-sm text-pharmaBlue font-medium mb-3">Cyproheptadine Hydrochloride & Tricholine
+                            Citrate Syrup (200ml)</p>
+                        <p class="text-gray-600 text-sm mb-4">Sugar-free syrup formulation.</p>
+                    </div>
+                    <button
+                        class="w-full bg-pharmaBlue hover:bg-pharmaDark text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                        View Formulation Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Card 6 -->
+            <div
+                class="product-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 image-zoom flex flex-col">
+                <div class="h-48 bg-gray-100 overflow-hidden relative">
+                    <img src="./images/product6.png" alt="Grandcobal Injection"
+                        class="w-full h-full object-contain p-4 transition duration-500">
+                    <span
+                        class="absolute top-4 right-4 bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full">Rx</span>
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-pharmaDark mb-1">Grandcobal Injection</h3>
+                        <p class="text-sm text-pharmaBlue font-medium mb-3">Methylcobalamin Injection (1 Ampoule of 1
+                            ml)</p>
+                        <p class="text-gray-600 text-sm mb-4">Available in a dispo pack for I.M./I.V. use only.</p>
+                    </div>
+                    <button
+                        class="w-full bg-pharmaBlue hover:bg-pharmaDark text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                        View Formulation Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Card 7 -->
+            <div
+                class="product-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 image-zoom flex flex-col">
+                <div class="h-48 bg-gray-100 overflow-hidden relative">
+                    <img src="./images/product7.png" alt="TEXAKART Injection"
+                        class="w-full h-full object-contain p-4 transition duration-500">
+                    <span
+                        class="absolute top-4 right-4 bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full">Rx</span>
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-pharmaDark mb-1">TEXAKART Injection</h3>
+                        <p class="text-sm text-pharmaBlue font-medium mb-3">Tranexamic Acid Injection IP (500mg/5ml)</p>
+                        <p class="text-gray-600 text-sm mb-4">Packaged in 5 x 5ml ampoules, formulated for I.V. use
+                            only.</p>
+                    </div>
+                    <button
+                        class="w-full bg-pharmaBlue hover:bg-pharmaDark text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                        View Formulation Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Card 8 -->
+            <div
+                class="product-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 image-zoom flex flex-col">
+                <div class="h-48 bg-gray-100 overflow-hidden relative">
+                    <img src="./images/product8.png" alt="VOMIPAX Injection"
+                        class="w-full h-full object-contain p-4 transition duration-500">
+                    <span
+                        class="absolute top-4 right-4 bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full">Rx</span>
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-pharmaDark mb-1">VOMIPAX Injection</h3>
+                        <p class="text-sm text-pharmaBlue font-medium mb-3">Ondansetron Hydrochloride Injection IP
+                            (4mg/2ml)</p>
+                        <p class="text-gray-600 text-sm mb-4">Available in 10x2 ml ampoules for I.M./I.V. use only.</p>
+                    </div>
+                    <button
+                        class="w-full bg-pharmaBlue hover:bg-pharmaDark text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
                         View Formulation Details
                     </button>
                 </div>
@@ -99,10 +268,39 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="bg-white py-16 border-t border-gray-200 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-pharmaDark mb-8">Contact Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Address -->
+                <div class="p-6 bg-bgSoft rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-pharmaBlue mb-2">Our Office</h3>
+                    <p class="text-gray-600">C281 Alpha 1<br>Greater Noida</p>
+                </div>
+
+                <!-- Phone -->
+                <div class="p-6 bg-bgSoft rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-pharmaBlue mb-2">Call Us</h3>
+                    <p class="text-gray-600">+91 98000112233</p>
+                </div>
+
+                <!-- Email -->
+                <div class="p-6 bg-bgSoft rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-pharmaBlue mb-2">Email Us</h3>
+                    <p class="text-gray-600">abc@gmail.com</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="bg-white border-t border-gray-200 mt-12 py-8 text-center text-gray-500">
-        <p>&copy; 2026 Santogem Pharma. All rights reserved.</p>
+    <footer class="bg-white border-t border-gray-200 py-8 text-center text-gray-500">
+        <p>&copy; 2026 Santogem Pharma Pvt Ltd. All rights reserved.</p>
     </footer>
 
 </body>
+
 </html>

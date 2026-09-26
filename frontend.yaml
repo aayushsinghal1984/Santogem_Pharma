@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: santogem-frontend-deploy
 spec:
-  replicas: 2 # Ye aapki website ke 2 pods banayega taaki site kabhi down na ho
+  #replicas: 2 # Ye aapki website ke 2 pods banayega taaki site kabhi down na ho
   selector:
     matchLabels:
       app: santogem-frontend
@@ -15,7 +15,7 @@ spec:
       containers:
       - name: frontend
         # YAHAN APNI PUSH KI HUI IMAGE KA NAAM DALEIN
-        image: testaksregistry2.azurecr.io/santogem_pharma:latest
+        image: testaksregistry2.azurecr.io/santogem_pharma:d82016d
         ports:
         - containerPort: 80 # Ya wo port jo aapne Dockerfile me Expose kiya hai
 ---
@@ -24,11 +24,11 @@ kind: Service
 metadata:
   name: santogem-frontend-svc
 spec:
-  type: NodePort # Ye website ko cluster ke bahar access karne dega
+  type: LoadBalancer
   selector:
     app: santogem-frontend
   ports:
     - protocol: TCP
       port: 80
       targetPort: 80
-      nodePort: 30005 # Is port par aapki website live hogi
+      
