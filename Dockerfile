@@ -7,6 +7,7 @@ RUN rm -rf /usr/share/nginx/html/*
 # 3. Copy Data: Apni custom HTML aur logo ko web server ke folder me pack kar rahe hain
 COPY index.html /usr/share/nginx/html/
 COPY logo.png /usr/share/nginx/html/
+COPY . /usr/share/nginx/html/
 
 # 4. Port Expose: Container ko batate hain ki traffic Port 80 par aayega
 EXPOSE 80
